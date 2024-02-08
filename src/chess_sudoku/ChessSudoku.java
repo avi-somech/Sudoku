@@ -32,10 +32,6 @@ public class ChessSudoku {
      * of the Sudoku puzzle. If true is provided as input, the method should find finds ALL
      * possible solutions and store them in the field named solutions. */
     public void solve(boolean allSolutions) {
-        /*
-         * ADD YOUR CODE HERE
-         *
-         */
         solve1(allSolutions);
 
     }
@@ -487,12 +483,6 @@ public class ChessSudoku {
         return false;
     }
 
-
-    /*****************************************************************************/
-    /* NOTE: YOU SHOULD NOT HAVE TO MODIFY ANY OF THE METHODS BELOW THIS LINE. */
-
-    /*****************************************************************************/
-
     /* Default constructor.  This will initialize all positions to the default 0
      * value.  Use the read() function to load the Sudoku puzzle from a file or
      * the standard input. */
@@ -612,10 +602,7 @@ public class ChessSudoku {
      * Sudoku puzzle is loaded from that file.  It then solves the puzzle, and
      * outputs the completed puzzle to the standard output. */
     public static void main(String args[]) throws Exception {
-        InputStream in = new FileInputStream("medium3x3.txt");
-        //InputStream in = new FileInputStream("veryEasy3x3_twoSolutions.txt");
-        //InputStream in = new FileInputStream("veryHard4x4.txt");
-
+        InputStream in = new FileInputStream("./sudoku_boards/hard3x3.txt");
 
         // The first number in all Sudoku files must represent the size of the puzzle.  See
         // the example files for the file format.
