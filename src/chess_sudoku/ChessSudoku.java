@@ -602,7 +602,7 @@ public class ChessSudoku {
      * Sudoku puzzle is loaded from that file.  It then solves the puzzle, and
      * outputs the completed puzzle to the standard output. */
     public static void main(String args[]) throws Exception {
-        InputStream in = new FileInputStream("./sudoku_boards/hard3x3.txt");
+        InputStream in = new FileInputStream("../../sudoku_boards/hard3x3.txt");
 
         // The first number in all Sudoku files must represent the size of the puzzle.  See
         // the example files for the file format.
